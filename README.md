@@ -1,12 +1,21 @@
-# Getting Started with Create React App
+# HardBank -- manifesting on-chain commerce. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is Version 0.1 of HardBank, built thanks to open-source resources provided by the following:
+
+The Stripes NFT: https://github.com/The-Stripes-NFT/
+Techomoro: https://github.com/techomoro/ReactMultiPageWebsite
+
+Thanks a ton, for real.
 
 ## Available Scripts
 
-In the project directory, you can run:
+We assume that React is already installed on your device, and suggest using Virtual Studio Code.
+Per normative standards, the following commands will launch the app in your localhost:3000
 
+### `npm install`
 ### `npm start`
+
+Additionally, chokidar may be needed to be specifically installed.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
