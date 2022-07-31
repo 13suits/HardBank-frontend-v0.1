@@ -14,7 +14,15 @@ The purpose of HardBank is to build out the framework which will allow transacti
 
 We define such transactions to be <b>fully on-chain</b> or <b>full-chain</b>. Purchasing an NFT for ETH is an example of a full-chain transaction: the blockchain records both the NFT and the ETH as the two assets are exchanged -- the entire exchange can is represented, in full, on the blockchain.
 
-There are currently many platforms which allow the use of crypocurrency to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser's wallet to the merchant's wallet is recorded on the blockchain; however, there is no information as to why the cryptocurrency was transferred. There is no information regarding the product that was bought.
+There are currently many platforms which allow the use of crypocurrency to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser's wallet to the merchant's wallet is recorded on the blockchain; however, there is no information regarding the product that was bought.
+
+We define these transactions where only half of the transaction is recorded on the blockchain to be <b>half-chain</b> transactions. Such transactions do not provide any information as to why the cryptocurrency was transferred from one account to another.
+
+Half-chain transactions do not make use of any the functionalities offered by blockchain technology and have questionable value-add.
+
+Moving transactions for physical products from half-chain to full-chain will allow for the functionalities of blockchain technology to be utilized, and will consequently provide benefits to merchants, consumers, investors, and the market as a whole.
+
+## How it Works
 
 
 ## Available Scripts
