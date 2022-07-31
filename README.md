@@ -10,9 +10,12 @@ Thanks a ton, for real.
 
 ## Purpose
 
-The purpose of HardBank is to build out the framework which will allow transactions for physical products to be fully represented on the blockchain. This means that both the cryptocurrency that was used to purchase the item, as well as the item itself will both be recorded on the blockchain.
+The purpose of HardBank is to build out the framework which will allow transactions for physical products to be completely represented and executed on the blockchain. This means that both the cryptocurrency that was used to purchase the item, as well as the item itself (more specifically -- a representation of the item) will be recorded on the blockchain.
 
-We define such transactions to be <b>fully on-chain</b>.
+We define such transactions to be <b>fully on-chain</b> or <b>full-chain</b>. Purchasing an NFT for ETH is an example of a full-chain transaction: the blockchain records both the NFT and the ETH as the two assets are exchanged -- the entire exchange can is represented, in full, on the blockchain.
+
+There are currently many platforms which allow the use of crypocurrency to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser's wallet to the merchant's wallet is recorded on the blockchain; however, there is no information as to why the cryptocurrency was transferred. There is no information regarding the product that was bought.
+
 
 ## Available Scripts
 
