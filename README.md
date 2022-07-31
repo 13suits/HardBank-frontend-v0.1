@@ -6,9 +6,36 @@ The Stripes NFT: https://github.com/The-Stripes-NFT/
 
 Techomoro: https://github.com/techomoro/ReactMultiPageWebsite
 
-Airdrop Tutorial: [link]
+m1guelpf: https://github.com/m1guelpf/nft-token-drop
 
-Thanks a ton, for real. I will list other resources that were helpful as I remember them.
+OpenZeppelin: https://github.com/OpenZeppelin/openzeppelin-contracts
+
+HashLips: https://github.com/HashLips/solidity_smart_contracts
+
+I will list other resources that were helpful as I remember them. Thanks a ton, for real.
+
+## Available Scripts
+
+We assume that React is already installed on your device, and suggest using Virtual Studio Code.
+
+Per normative standards, the following commands will launch the app in your localhost:3000
+
+### `npm install`
+### `npm start`
+
+Additionally, chokidar may be needed to be specifically installed.
+
+### `npm install chokidar`
+
+As this is still a work in progress, the app is currently meant to be operate on the Rinkeby testnet.
+
+There are three smart contracts that interact with the front-end:
+ - BranchNFT.sol -- this smart contract acts as the barcode for the product and is executable by anyone.
+ - $NFT.sol -- this smart contract is for the rewards token of the product and is also engaged in the claim function of the purchasing journey.
+ - Payments.sol -- this smart contract is the payment splitter, designating how much each owner is due to receive and is executable only by the owners.
+
+Additionally, there is one smart contract that will be integrated soon:
+ - TrunkNFT.sol -- this smart contract mints owners of the product -- i.e. an owner is defined as someone who holds an NFT minted from this contract.
 
 ## Purpose
 
@@ -42,88 +69,34 @@ Like an airdrop, our claim function also provides an opportunity for merchants t
 
 On the otherside of the transaction, the payments are stored in the NFT's smart contract. These proceeds can be divvied up as the product owner (or owners) choose to inscribe on the smart contract. The implications of this transparency and functionality are easy to imagine, and are consequential to fundraising, investing, compensation, payment cycles, and other aspects of 'real' business.
 
-Taken as a whole, these functionalities provide the capacity to illuminate not only the relationship between the purchaser and the merchant, but also that of the product operator and the product owners. 
+Taken as a whole, these functionalities provide the capacity to illuminate not only the relationship between the purchaser and the merchant, but also that of the product operator and the product owner. The resulting value-adds will spur more efficient allocation of capital and help better products to be developed, providing a net positive for the market (and species-being) as a whole.
 
-Some additional thoughts:
+<i>Some additional thoughts</i>
+
 Since there is no maximum limit to how many units of a given product can be sold, there is no maximum cap to the number of NFTs which can be minted from these addresses -- unless the product in question is meant to be a limited edition product.
 
+NTT smart contracts could be used instead of NFT smart contracts. The vast majority of physical products that are sold are not meant to be resold, and utilizing NFTs could prevent adoption given the current speculative connotations associated with NFTs.
 
-## Available Scripts
+In our app, we have utilized a Payment Splitter which allows Product Owners to view and claim their share of the proceeds in real time. We believe the best ownership/governance model should have Product Ownership be represented by the ownership of a seperate NFT. In addition to providing the opportunity for speculation, this enables Product Owners to act, make decisions, and oversee Product Operations like a Board of Directors.
 
-We assume that React is already installed on your device, and suggest using Virtual Studio Code.
+We find this to be better than operating governance solely on governance tokens, which tends to be disorganized and therefore fails at producing the accountability essential to operating a healthy business.
 
-Per normative standards, the following commands will launch the app in your localhost:3000
+## Shortcomings and things that need to be built
 
-### `npm install`
-### `npm start`
+At the theoretical level, the largest shortcoming comes with providing the physical address to receive the product. This constitutes an insta-dox, as a given wallet address can now be linked to a given physical address.
 
-Additionally, chokidar may be needed to be specifically installed.
+There are also issues regarding disputes -- for example, what happens in the event that the purchaser says the physical product has not yet arrived, but the merchant says the product was already sent two weeks ago? There are many examples of disputes; and payment processors act as third-parties to resolve said disputes, even going so far as to go into their own pockets to refund transactions.
 
-At the current duration, the app is meant to be operate on the Rinkeby testnet.
+Under the HardBank protocol, the purchaser and the merchant interact directly, and there is no third-party to hold the merchant accountable once the payment has been made. It is possible to set up a third party which handles logistics; effectively verfiying stock, checking on orders, and executing delivery. It would be capitally intensive to build this third party, and this prcoess could also be expensive for certain merchants who may not have the funds to create the initial set amount of invetory.
 
-There are three contracts that interact with the front-end:
+There is also the obvious issue of adoption. While many merchants tout that they are ready to accept cryptocurrency as payments, and many providers have been set up to execute these payments, it is clear that the volume of half-chain transactions is extremely small. Is there any actual demand, at this time, to use cryptocurrency to purchase physical products?
 
+On the coding side, there is definitely some clunkiness, and we would like to add (or experiment with) certain features, including:
+ - checking if an NFT has already been used to claim an order
+ - creating a burn functionality to the NFT upon claiming an order
+ - saving the inputted physical address in a way that is not linked to the wallet address that is used to execut the claim
+ - tokengating entry to the "Owner" section
+ - conducting a check in real time for NFT ownership status in order to ensure that only NFT holders can access the Payable smart contract
+ - positioning of the login button in the navigation bar
+ - etc etc
 
-
-
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
