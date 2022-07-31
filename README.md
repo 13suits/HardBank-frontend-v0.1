@@ -3,6 +3,7 @@
 This is Version 0.1 of HardBank, built thanks to open-source resources provided by the following:
 
 The Stripes NFT: https://github.com/The-Stripes-NFT/
+
 Techomoro: https://github.com/techomoro/ReactMultiPageWebsite
 
 Thanks a ton, for real.
