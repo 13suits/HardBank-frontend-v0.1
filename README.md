@@ -6,23 +6,46 @@ The Stripes NFT: https://github.com/The-Stripes-NFT/
 
 Techomoro: https://github.com/techomoro/ReactMultiPageWebsite
 
-Thanks a ton, for real.
+Airdrop Tutorial: [link]
+
+Thanks a ton, for real. I will list other resources that were helpful as I remember them.
 
 ## Purpose
 
-The purpose of HardBank is to build out the framework which will allow transactions for physical products to be completely represented and executed on the blockchain. This means that both the cryptocurrency that was used to purchase the item, as well as the item itself (more specifically -- a representation of the item) will be recorded on the blockchain.
+The purpose of HardBank is to build out the protocol which will allow transactions for physical products to be completely represented and executed on the blockchain. This means that both the cryptocurrency that is used to purchase the product, as well as the product itself (more specifically -- a representation of the product) will be recorded on the blockchain.
 
-We define such transactions to be <b>fully on-chain</b> or <b>full-chain</b>. Purchasing an NFT for ETH is an example of a full-chain transaction: the blockchain records both the NFT and the ETH as the two assets are exchanged -- the entire exchange can is represented, in full, on the blockchain.
+We define such transactions to be <b>fully on-chain</b> or <b>full-chain</b>.
 
-There are currently many platforms which allow the use of crypocurrency to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser's wallet to the merchant's wallet is recorded on the blockchain; however, there is no information regarding the product that was bought.
+Purchasing an NFT for ETH is an example of a full-chain transaction: when the two assets are exchanged, both sides of the transaction (the NFT to buyer and the ETH to seller) are recorded on the blockchain -- the entire transaction is represented, in full, on the blockchain.
 
-We define these transactions where only half of the transaction is recorded on the blockchain to be <b>half-chain</b> transactions. Such transactions do not provide any information as to why the cryptocurrency was transferred from one account to another.
+Currently, there are many providers which allow crypocurrency to be used to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser to the merchant (or payments provider) is recorded on the blockchain; however, there is no information on the blockchain regarding the product that was purchased.
 
-Half-chain transactions do not make use of any the functionalities offered by blockchain technology and have questionable value-add.
+We define these transactions where only half of the information is recorded on the blockchain to be <b>half-chain</b> transactions. Such transactions do not provide any information as to why the cryptocurrency was transferred from one account to another.
 
-Moving transactions for physical products from half-chain to full-chain will allow for the functionalities of blockchain technology to be utilized, and will consequently provide benefits to merchants, consumers, investors, and the market as a whole.
+Half-chain transactions make no use of any of the functionalities offered by blockchain technology and have questionable value-add beyond treating cryptocurrency as a currency.
+
+Moving transactions for physical products from half-chain to full-chain will allow for the functionalities of blockchain technology to be actualized, and will consequently provide meaningful benefits to merchants, consumers, investors, and the market as a whole.
+
+These benefits are valuable enough to eventually push a tremendous amount of transactions for physical products to be executed on-chain.
 
 ## How it Works
+
+Beyond acting as a medium for art or as assets in video games, NFTs have tremendous functionality as unique single-form entries on the blockchain.
+
+We utilize this functionality to injectively represent any given product with a unique NFT smart contract address. These 1-to-1 pairings are meant to mirror how barcodes are used to represent products in commerce today.
+
+To purchase a given product, the purchaser first mints an NFT from its smart contract. Both sides of this transaction are recorded on the blockchain — (i) the cryptocurrency used to mint (or pay for) the NFT (or product), and (ii) the NFT (or representation of the product) transferred to the purchaser in exchange for the payment.
+
+Upon completing the on-chain transaction, the purchaser will then want to claim the physical product by providing the merchant with a physical address to receive the product. In order to ensure that a single instance of an NFT can only be used to claim one unit of a given product, the claiming process must alter the state of the NFT used to claim the product. To represent this on the blockchain, our claim function mimics a token airdrop exclusive to NFT holders, which tracks the status of whether or not an NFT has already been used to claim tokens from an airdrop.
+
+Like an airdrop, our claim function also provides an opportunity for merchants to reward its customers with reward tokens, sent to the purchaser at time of claim. The precise functionality of the reward token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and building a community for a product.
+
+On the otherside of the transaction, the payments are stored in the NFT's smart contract. These proceeds can be divvied up as the product owner (or owners) choose to inscribe on the smart contract. The implications of this transparency and functionality are easy to imagine, and are consequential to fundraising, investing, compensation, payment cycles, and other aspects of 'real' business.
+
+Taken as a whole, these functionalities provide the capacity to illuminate not only the relationship between the purchaser and the merchant, but also that of the product operator and the product owners. 
+
+Some additional thoughts:
+Since there is no maximum limit to how many units of a given product can be sold, there is no maximum cap to the number of NFTs which can be minted from these addresses -- unless the product in question is meant to be a limited edition product.
 
 
 ## Available Scripts
