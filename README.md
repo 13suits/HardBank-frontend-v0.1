@@ -62,31 +62,49 @@ Moving transactions for physical products from half-chain to full-chain will all
 
 These benefits are valuable enough to eventually push a tremendous amount of transactions for physical products to be executed on-chain.
 
-## How it Works
+## Home.jsx
 
-Beyond acting as a medium for art or as assets in video games, NFTs have tremendous functionality as unique single-form entries on the blockchain.
+This page describes the project.
 
-We utilize this functionality to injectively represent any given product with a unique NFT smart contract address. These 1-to-1 pairings are meant to mirror how barcodes are used to represent products in commerce today.
+## Buy.jsx
 
-To purchase a given product, the purchaser first mints an NFT from its smart contract. Both sides of this transaction are recorded on the blockchain — (i) the cryptocurrency used to mint (or pay for) the NFT (or product), and (ii) the NFT (or representation of the product) transferred to the purchaser in exchange for the payment.
+This page is where the product is purchased.
 
-Upon completing the on-chain transaction, the purchaser will then want to claim the physical product by providing the merchant with a physical address to receive the product. In order to ensure that a single instance of an NFT can only be used to claim one unit of a given product, the claiming process must alter the state of the NFT used to claim the product. To represent this on the blockchain, our claim function mimics a token airdrop exclusive to NFT holders, which tracks the status of whether or not an NFT has already been used to claim tokens from an airdrop.
+For any given product, we injectively represent the product with a unique NFT smart contract address. These 1-to-1 pairings are meant to mirror how barcodes are used to represent products in commerce today.
 
-Like an airdrop, our claim function also provides an opportunity for merchants to reward its customers with reward tokens, sent to the purchaser at time of claim. The precise functionality of the reward token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and building a community for a product.
+Just as a barcode is scanned to initiate the purchase of a product, the purchasing journey for our protocol begins with the purchaser minting an NFT from the aforementioned NFT smart contract address. Both sides of this transaction are recorded on the blockchain — (i) the cryptocurrency used to mint (or pay for) the NFT (or product), and (ii) the NFT (or representation of the product) transferred to the purchaser in exchange for the payment. This is a full-chain tranasction.
 
-On the otherside of the transaction, the payments are stored in the NFT's smart contract. These proceeds can be divvied up as the product owner (or owners) choose to inscribe on the smart contract. The implications of this transparency and functionality are easy to imagine, and are consequential to fundraising, investing, compensation, payment cycles, and other aspects of 'real' business.
-
-Taken as a whole, these functionalities provide the capacity to illuminate not only the relationship between the purchaser and the merchant, but also that of the product operator and the product owner. The resulting value-adds will spur more efficient allocation of capital and help better products to be developed, providing a net positive for the market (and species-being) as a whole.
-
-<i>Some additional thoughts</i>
+The resulting NFT is not an art piece or a speculative asset, but a receipt that represents the product on the blockchain. We are utilizing the functionality of NFTs as single-form unique entries on the blockchain.
 
 Since there is no maximum limit to how many units of a given product can be sold, there is no maximum cap to the number of NFTs which can be minted from these addresses -- unless the product in question is meant to be a limited edition product.
 
-NTT smart contracts could be used instead of NFT smart contracts. The vast majority of physical products that are sold are not meant to be resold, and utilizing NFTs could prevent adoption given the current speculative connotations associated with NFTs.
+## Claim.jsx
 
-In our app, we have utilized a Payment Splitter which allows Product Owners to view and claim their share of the proceeds in real time. We believe the best ownership/governance model should have Product Ownership be represented by the ownership of a seperate NFT. In addition to providing the opportunity for speculation, this enables Product Owners to act, make decisions, and oversee Product Operations like a Board of Directors.
+This page is where the purchased product is claimed.
 
-We find this to be better than operating governance solely on governance tokens, which tends to be disorganized and therefore fails at producing the accountability essential to operating a healthy business.
+Upon completing the full-chain transaction, the purchaser will then want to claim the physical product by providing the merchant with a physical address to receive the product.
+
+It is essential that each NFT that is minted can only claim one product. We accomplish this by having our claim process mimic a token airdrop exclusive to NFT holders -- for example, the ApeCoin airdrop for BAYC/MAYC holders -- which tracks the status of whether or not an NFT has already been used to claim tokens from an airdrop.
+
+Like an airdrop, our claim function provides an opportunity for merchants to reward its customers with loyalty tokens, sent to the purchaser at time of claim. The precise functionality of the loyalty token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and build a community for a product.
+
+Upon providing the physical address to receive the product, the purchaser must provide the merchant with the index number of the NFT that was minted to claim the loyalty tokens and complete the claim process. In order for this process to execute, the purchaser must be holding the NFT which corresponds to the index number that was provided*.
+
+This exchange will ensure that the index number of each NFT that has claimed its loyalty tokens is been recorded on the blockchain. If the same index number initiates a second claim, the process will fail. This ensures that each NFT that is minted can only claim one product.
+
+It should noted there are several alternatives worth considering:
+ - Using NTTs instead of NFTs to represent products
+ - Burning or altering the state of the NFT in exchange for loyalty tokens during the claim process to ensure there is limited funny business
+
+## Owner.jsx
+
+This is page is for the product owners to see the proceeds from the sale of the product, as well as to claim their share of the proceeds.
+
+The proceeds from minting the NFTs are stored in the NFT's smart contract. These proceeds can be withdrawn to a payment smart contract by the product owners.
+
+In the payment smart contract, the product owners can choose to divvy up the proceeds amongst themselves to their choosing. The implications of this transparency and functionality are easy to imagine, and are consequential to fundraising, investing, compensation, payment cycles, and other aspects of 'real' business.
+
+Taken as a whole, these functionalities provide the capacity to illuminate not only the relationship between the purchaser and the merchant, but also that of the product operator and the product owner. The resulting value-adds will spur more efficient allocation of capital and help better products to be developed, providing a net positive for the market (and species-being) as a whole.
 
 ## Shortcomings and things that need to be built
 
@@ -100,10 +118,9 @@ There is also the obvious issue of adoption. While many merchants tout that they
 
 On the coding side, there is definitely some clunkiness, and we would like to add (or experiment with) certain features, including:
  - checking if an NFT has already been used to claim an order
- - creating a burn functionality to the NFT upon claiming an order
- - saving the inputted physical address in a way that is not linked to the wallet address that is used to execut the claim
+ - experimenting with a burn or altering functionality to the NFT upon claiming an order
+ - saving the inputted physical address in a way that is not linked to the wallet address that is used to execute the claim
  - tokengating entry to the "Owner" section
  - conducting a check in real time for NFT ownership status in order to ensure that only NFT holders can access the Payable smart contract
  - positioning of the login button in the navigation bar
  - etc etc
-
