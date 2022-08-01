@@ -30,15 +30,19 @@ There are several blockchain applications present throughout the website, and ea
 As denoted in the config.json, the applications on this website are meant to be operate on the Rinkeby testnet, as this is still a work in progress.
 
 There are three smart contract addresses included in the config.json with their ABIs in config folder:
+
  - BRANCH_NFT_ADDRESS -- this smart contract acts as the barcode for the product and is executable by anyone.
    - corresponds to abi.json
- - TOKEN_ADDRESS -- this smart contract is for the rewards token of the product and is also engaged in the claim function of the purchasing journey.
+
+- TOKEN_ADDRESS -- this smart contract is for the rewards token of the product and is also engaged in the claim function of the purchasing journey.
    - corresponds to token_abi.json
- - PAYMENT_ADDRESS -- this smart contract is the payment splitter, designating how much each owner is due to receive and is executable only by the owners.
+
+- PAYMENT_ADDRESS -- this smart contract is the payment splitter, designating how much each owner is due to receive and is executable only by the owners.
    - corresponds to payment_abi.json
 
 These functionalities are described in greater detail below. Additionally, we hope to integrate another smart contract soon:
- - TRUNK_NFT_ADDRESS -- this smart contract mints the owners of the product, who have exclusive access to view and claim their share of cash proceeds from sales of the product in real time.
+
+- TRUNK_NFT_ADDRESS -- this smart contract mints the owners of the product, who have exclusive access to view and claim their share of cash proceeds from sales of the product in real time.
 
 ## Purpose
 
