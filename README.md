@@ -1,18 +1,12 @@
 # HardBank -- manifesting on-chain commerce. 
 
-This is Version 0.1 of HardBank, built thanks to open-source resources provided by the following:
+This is Version 0.1 of HardBank. Our frontend was built thanks to the open-source resources provided by the following:
 
 The Stripes NFT: https://github.com/The-Stripes-NFT/
 
 Techomoro: https://github.com/techomoro/ReactMultiPageWebsite
 
-m1guelpf: https://github.com/m1guelpf/nft-token-drop
-
-OpenZeppelin: https://github.com/OpenZeppelin/openzeppelin-contracts
-
-HashLips: https://github.com/HashLips/solidity_smart_contracts
-
-I will list other resources that were helpful as I remember them. Thanks a ton, for real.
+Thanks a ton, for real.
 
 ## Available Scripts
 
@@ -27,15 +21,24 @@ Additionally, chokidar may be needed to be specifically installed.
 
 ### `npm install chokidar`
 
-As this is still a work in progress, the app is currently meant to be operate on the Rinkeby testnet.
+## Components and Config
 
-There are three smart contracts that interact with the front-end:
- - BranchNFT.sol -- this smart contract acts as the barcode for the product and is executable by anyone.
- - $NFT.sol -- this smart contract is for the rewards token of the product and is also engaged in the claim function of the purchasing journey.
- - Payments.sol -- this smart contract is the payment splitter, designating how much each owner is due to receive and is executable only by the owners.
+The front-end makes use of react across a multi-page website. Each page in the website is held in the components subfolder of the src folder.
 
-Additionally, there is one smart contract that will be integrated soon:
- - TrunkNFT.sol -- this smart contract mints owners of the product -- i.e. an owner is defined as someone who holds an NFT minted from this contract.
+There are several blockchain applications present throughout the website, and each make heavy use of react-redux. Each application is stored as a .js file within the src folder, and has been exported as a function to the corresponding pages.
+
+As denoted in the config.json, the applications on this website are meant to be operate on the Rinkeby testnet, as this is still a work in progress.
+
+There are three smart contract addresses included in the config.json with their ABIs in config folder:
+ - BRANCH_NFT_ADDRESS -- this smart contract acts as the barcode for the product and is executable by anyone.
+   - corresponds to abi.json
+ - TOKEN_ADDRESS -- this smart contract is for the rewards token of the product and is also engaged in the claim function of the purchasing journey.
+   - corresponds to token_abi.json
+ - PAYMENT_ADDRESS -- this smart contract is the payment splitter, designating how much each owner is due to receive and is executable only by the owners.
+   - corresponds to payment_abi.json
+
+These functionalities are described in greater detail below. Additionally, we hope to integrate another smart contract soon:
+ - TRUNK_NFT_ADDRESS -- this smart contract mints the owners of the product, who have exclusive access to view and claim their share of cash proceeds from sales of the product in real time.
 
 ## Purpose
 
