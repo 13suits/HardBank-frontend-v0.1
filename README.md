@@ -12,7 +12,7 @@ Thanks a ton, for real.
 
 We assume that React is already installed on your device, and suggest using Virtual Studio Code.
 
-Per normative standards, the following commands will launch the app in your localhost:3000
+The following commands will launch the app in your localhost:3000
 
 ### `npm install`
 ### `npm start`
@@ -25,24 +25,24 @@ Additionally, chokidar may be needed to be specifically installed.
 
 The front-end makes use of react across a multi-page website. Each page in the website is held in the components subfolder of the src folder.
 
-There are several blockchain applications present throughout the website, and each make heavy use of react-redux. Each application is stored as a .js file within the src folder, and has been exported as a function to the corresponding pages.
+There are several blockchain applications present throughout the website, and each make heavy use of react-redux. Each application is stored as a .js file within the src folder, and has been exported as a function to the aforementioned pages in the components subfolder.
 
 As denoted in the config.json, the applications on this website are meant to be operate on the Rinkeby testnet, as this is still a work in progress.
 
 There are three smart contract addresses included in the config.json with their ABIs in config folder:
 
- - BRANCH_NFT_ADDRESS -- this smart contract acts as the barcode for the product and is executable by anyone.
+ - BRANCH_NFT_ADDRESS -- this smart contract acts as the barcode for the product; products are purchased by minting NFTs from this contract.
    - corresponds to abi.json
 
-- TOKEN_ADDRESS -- this smart contract is for the rewards token of the product and is also engaged in the claim function of the purchasing journey.
+ - TOKEN_ADDRESS -- this smart contract is engaged during the claim process and provides loyalty tokens to reward those who purchase the product while also ensuring that each minted NFT can only undergo the claim process once - i.e. one NFT can only claim one product.
    - corresponds to token_abi.json
 
-- PAYMENT_ADDRESS -- this smart contract is the payment splitter, designating how much each owner is due to receive and is executable only by the owners.
+ - PAYMENT_ADDRESS -- this smart contract acts as the paymaster, designating how much of the proceeds from the sale of the product is due to each product owner, and allowing each product owner to claim their share of the proceeds in real time; as such, this contract is executable only by the product owners.
    - corresponds to payment_abi.json
 
 These functionalities are described in greater detail below. Additionally, we hope to integrate another smart contract soon:
 
-- TRUNK_NFT_ADDRESS -- this smart contract mints the owners of the product, who have exclusive access to view and claim their share of cash proceeds from sales of the product in real time.
+ - TRUNK_NFT_ADDRESS -- this smart contract designates product ownership - i.e. holders of TrunkNFTs are the product owners who have exclusive access to view and withdraw their share of the proceeds in real time.
 
 ## Purpose
 
@@ -50,7 +50,7 @@ The purpose of HardBank is to build out the protocol which will allow transactio
 
 We define such transactions to be <b>fully on-chain</b> or <b>full-chain</b>.
 
-Purchasing an NFT for ETH is an example of a full-chain transaction: when the two assets are exchanged, both sides of the transaction (the NFT to buyer and the ETH to seller) are recorded on the blockchain -- the entire transaction is represented, in full, on the blockchain.
+Purchasing an NFT for ETH is an example of a full-chain transaction: when the two assets are exchanged, both sides of the transaction -- (i) the NFT to buyer and (ii) the ETH to seller -- are recorded on the blockchain: the entire transaction is represented, in full, on the blockchain.
 
 Currently, there are many providers which allow crypocurrency to be used to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser to the merchant (or payments provider) is recorded on the blockchain; however, there is no information on the blockchain regarding the product that was purchased.
 
