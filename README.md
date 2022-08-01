@@ -23,19 +23,19 @@ Additionally, chokidar may be needed to be specifically installed.
 
 ## Components and Config
 
-The front-end makes use of react across a multi-page website. Each page in the website is held in the components subfolder of the src folder.
+The front-end makes use of React across a multi-page website. Each page in the website is held in the components subfolder of the src folder.
 
-There are several blockchain applications present throughout the website, and each make heavy use of react-redux. Each application is stored as a .js file within the src folder, and has been exported as a function to the aforementioned pages in the components subfolder.
+There are several blockchain applications present throughout the website, and each make heavy use of React-Redux. Each application is stored as a .js file within the src folder, and has been exported as a function to the aforementioned pages in the components subfolder.
 
 As denoted in the config.json, the applications on this website are meant to be operate on the Rinkeby testnet, as this is still a work in progress.
 
-There are three smart contract addresses included in the config.json with their ABIs in config folder:
+There are three smart contract addresses that can be configured in the config.json with their respective ABIs in the config folder:
 
  - BRANCH_NFT_ADDRESS -- this smart contract acts as the barcode for the product; products are purchased by minting NFTs from this contract.
    - corresponds to abi.json
 
  - TOKEN_ADDRESS -- this smart contract is engaged during the claim process and provides loyalty tokens to reward those who purchase the product while also ensuring that each minted NFT can only undergo the claim process once - i.e. one NFT can only claim one product.
-   - corresponds to token_abi.json
+   - corresponds to token_abi.json2
 
  - PAYMENT_ADDRESS -- this smart contract acts as the paymaster, designating how much of the proceeds from the sale of the product is due to each product owner, and allowing each product owner to claim their share of the proceeds in real time; as such, this contract is executable only by the product owners.
    - corresponds to payment_abi.json
