@@ -35,10 +35,7 @@ function Claim() {
               <Provider store={store5}>
               <Balance />
               </Provider>
-              <br></br>
-              <Provider store={store2}>
-              <Check />
-              </Provider>           
+              <br></br>        
               <br></br>
               Input your physical address and click "Register" to register the physical address you would like to receive your physical branch.
               <br></br>
@@ -52,6 +49,8 @@ function Claim() {
               </form>
               <br></br>
               To complete the process, click "Claim", then input your index number, and then click "Confirm" to confirm all information.
+              <br></br>
+              (Remember that each BranchNFT can only be claimed once!!)
               <br></br>
               <br></br>
               <Provider store={store2}>
