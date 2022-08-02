@@ -39,6 +39,9 @@ function Buy() {
               After purchasing, please head to the <b>Claim</b> page to claim your order.
               <br></br>
               <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
 
               </p>
         </div>
