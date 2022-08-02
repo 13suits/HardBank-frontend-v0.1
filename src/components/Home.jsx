@@ -36,6 +36,10 @@ function Home() {
               <b>"Owner"</b> -- Investors are those who own a TrunkNFT and can view the balance of total purchases, which is held in the BranchNFT address. They can claim their share of the proceeds from this address.
               <br></br>
               <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>    
             </p>
           </div>
         </div>
