@@ -16,7 +16,7 @@ function Owner() {
           <h1 class="font-weight-bold">Owner</h1>
             <br></br>
             <p>
-              This area is for Owners -- i.e. those who own a TrunkNFT (eventually we want to build a token-gate)
+              This area is for Owners -- i.e. those who own a TrunkNFT (may need to build a token-gate)
             <br></br>
             <br></br>
               Owners can check the financial performance of Branch sales (volume and revenue) in real time.
