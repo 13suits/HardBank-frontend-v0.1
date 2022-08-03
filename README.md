@@ -8,6 +8,9 @@ Techomoro: https://github.com/techomoro/ReactMultiPageWebsite
 
 Thanks a ton, for real.
 
+You can interact with the demo on desktop at the URL below:
+https://hardbank.io/
+
 ## Available Scripts
 
 We assume that React is already installed on your device, and suggest using Virtual Studio Code.
