@@ -10,7 +10,7 @@ function Footer() {
             GitHub
             </a>
               <br></br>
-            Copyright &copy; Algebra Labs 2022
+            Copyright &copy; Algebra 2022
           </p>
         </div>
       </footer>
