@@ -18,26 +18,25 @@ function Claim() {
           <h1 class="font-weight-bold">Claim</h1>
             <br></br>
             <p>
-              To continue our example, "claiming" our order means:
+              To continue our example, claiming our order means:
               <br></br>
               &nbsp;&nbsp;1/ asking for the physical branch to be delivered to a physical location of our choice;
               <br></br>
               &nbsp;&nbsp;2/ receiving $TREE rewards for our purchase in our Web3 wallet.
               <br></br>
               <br></br>
-              A BranchNFT can only be claimed once,
+              A BranchNFT can only be claimed once, and will continue to remain in our Web3 wallet as a receipt for our order.
               <br></br>
-              and will continue to remain in our Web3 wallet as a receipt for our order.
+              In order to claim your branch, please do the following:
               <br></br>
               <br></br>
-              Click "View" to see the Index Numbers of the BranchNFTs in your wallet.
+              Click <b>View</b> to see the Index Numbers of the BranchNFTs in your wallet.
               <br></br>
               <Provider store={store5}>
               <Balance />
               </Provider>
               <br></br>        
-              <br></br>
-              Input your physical address and click "Register" to register the physical address you would like to receive your physical branch.
+              Input your physical address and click <b>Register</b> to register the physical address you would like to receive your physical branch.
               <br></br>
               <br></br>
               <form>
@@ -48,7 +47,7 @@ function Claim() {
               &nbsp;&nbsp;<input type="submit" value="Register" />
               </form>
               <br></br>
-              To complete the process, click "Claim", then input your index number, and then click "Confirm" to confirm all information.
+              To complete the process, click <b>Claim</b>, then input your index number, and then click <b>Confirm</b> to confirm all information.
               <br></br>
               (Remember that each BranchNFT can only be claimed once!!)
               <br></br>
@@ -58,6 +57,7 @@ function Claim() {
               </Provider>
               <br></br>
               Upon completion, you will receive $TREE rewards in your Web3 wallet.
+              <br></br>
               <br></br>
               <br></br>
               <br></br>
