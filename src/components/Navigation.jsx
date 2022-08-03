@@ -11,7 +11,7 @@ function Navigation() {
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            HardBank: On-Chain Commerce, v0.1
+            HardBank: Full-Chain Commerce, v0.1
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
