@@ -9,7 +9,6 @@ function Footer() {
            <a href="https://github.com/thirteensuits" target="_blank" rel="noreferrer">
             GitHub
             </a>
-          <br></br>
               <br></br>
             Copyright &copy; Algebra Labs 2022
           </p>
