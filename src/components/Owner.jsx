@@ -16,12 +16,12 @@ function Owner() {
           <h1 class="font-weight-bold">Owner</h1>
             <br></br>
             <p>
-              This area is for Owners -- i.e. those who own a TrunkNFT (may need to build a token-gate)
+              This area is for Owners -- i.e. those who own a TrunkNFT
+                <br></br>
+             <i>(we may need to build a token-gate)</i>
             <br></br>
             <br></br>
-              Owners can check the financial performance of Branch sales (volume and revenue) in real time.
-              <br></br>
-              And can claim their share of the cash flow in real time as well.
+              Owners can check the financial performance of branch sales (volume and revenue) in real time, and can claim their share of the cash flow in real time as well.
               <br></br>
               <br></br>
               The process works as such:
@@ -32,6 +32,7 @@ function Owner() {
               <br></br>
               &nbsp;&nbsp;3/ release ETH payable to Owner from Payments contract to the Owner's wallet. 
               <br></br>
+                <br></br>
               <b>The functions in this process can only be executed by Owners.</b>
               <br></br>
               <br></br>
