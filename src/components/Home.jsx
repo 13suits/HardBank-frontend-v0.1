@@ -43,10 +43,13 @@ function Home() {
               <b>"Owner"</b> -- Product owners (defined as those who own a TrunkNFT) can view the balance of total purchases and can claim their share of the proceeds.
               <br></br>
               <br></br>
+              This is a work in progress, with many features yet to be built and many details that need to be improved. Any and all feedback is welcome.
               <br></br>
               <br></br>
               <br></br>
               <br></br>    
+              <br></br>
+              <br></br>
             </p>
           </div>
         </div>
