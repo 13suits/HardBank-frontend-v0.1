@@ -27,7 +27,7 @@ function Claim() {
               <br></br>
               A BranchNFT can only be claimed once, and will continue to remain in our Web3 wallet as a receipt for our order.
               <br></br>
-              In order to claim your branch, please do the following:
+              To claim your branch, please do the following:
               <br></br>
               <br></br>
               Click <b>View</b> to see the Index Numbers of the BranchNFTs in your wallet.
