@@ -42,7 +42,6 @@ function Buy() {
               <br></br>
               <br></br>
               <br></br>
-
               </p>
         </div>
       </div>
