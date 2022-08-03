@@ -14,9 +14,10 @@ function Home() {
               <i>This is Version 0.1 of our attempt to manifest <b>full-chain</b> commerce for physical products.</i>
               <br></br>
               <br></br>
-              A <b>full-chain</b> transaction is transaction where both sides of the transaction -- the product being purchased and the cryptocurrency that is used to purchase the product -- are represented on-chain.
+              A <b>full-chain</b> transaction is transaction where both sides of the transaction -- (i) the product being purchased and (ii) the cryptocurrency that is used to purchase the product -- are represented on-chain.
               <br></br>
-              We execute full-chain transactions for physical products by injectively assigning NFT smart contract addresses to products as barcodes are assigned and used in commerce today.
+              <br></br>
+              We execute full-chain transactions for physical products by injectively assigning them to NFT smart contract addresses; this mirrors how barcodes are assigned and used in commerce today.
               <br></br>
               <br></br>
               <i>Transactions through our protocol works as follows:</i>
@@ -30,9 +31,8 @@ function Home() {
               &nbsp;&nbsp;&nbsp;3. &nbsp;Product owners can see how much product has been sold and can also claim their share of the proceeds in real-time.
               <br></br>
               <br></br>
-              We have built a demo of our protocol from which Branches can be purchased by minting from a BranchNFT smart contract.
+              This website is a demo of our protocol where users can purchase branches by minting from the BranchNFT smart contract. The demo functions on the Rinkeby Testnet, with the following executionable actions that can be accessed from the Header:
               <br></br>
-              This demo functions on the Rinkeby Testnet, with the following executionable actions that can be accessed from the Header:
               <br></br>
               <b>"Buy"</b> -- Branches can be purchased by minting a BranchNFT for 0.01 ETH.
               <br></br>
@@ -43,7 +43,7 @@ function Home() {
               <b>"Owner"</b> -- Product owners (defined as those who own a TrunkNFT) can view the balance of total purchases and can claim their share of the proceeds.
               <br></br>
               <br></br>
-              This is a work in progress, with many features yet to be built and many details that need to be improved. Any and all feedback is welcome.
+              <i>This is a work in progress, with many features yet to be built and many details that need to be improved. Any and all feedback is welcome.</i>
               <br></br>
               <br></br>
               <br></br>
